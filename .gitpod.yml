@@ -1,3 +1,10 @@
 tasks:
-- init: cd spring-petclinic && make build
-- init: cd typescript-node-example && make build
+- name: spring-petclinic
+  before: cd spring-petclinic
+  init: make build
+  command: make run
+- name: typescript-node-example
+  before: cd typescript-node-example
+  init: make build
+  command: make run
+  openMode: split-right
