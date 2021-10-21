@@ -1,0 +1,3 @@
+tasks:
+- init: cd spring-petclinic && make build
+- init: cd typescript-node-example && make build
